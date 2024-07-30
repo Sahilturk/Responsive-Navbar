@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function myFunction() {
+  var checkBox = document.getElementById("check");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "none";
+  } else {
+     text.style.display = "block";
+  }
+}
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">LOGO</div>
+      <input type="checkbox" id="check" onclick="myFunction()"/>
+      <label for="check">
+        <i class="fa fa-bars w3-xlarge"></i>
+      </label>
+      <ul>
+        <li class="links"><a href="" class="active">Home</a></li>
+        <li class="links"><a href="">services</a></li>
+        <li class="links"><a href="">About</a></li>
+        <li class="links"><a href="">Contact us</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="content">
+        <div id="text" style="display:block">
+            RESPONSIVE NAVIGATION BAR
+        </div>
+    </div>
+  </body>
+</html>
